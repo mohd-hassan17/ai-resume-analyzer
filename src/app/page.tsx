@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ResumeCard from "@/components/ResumeCard";
 import { resumes } from "@/constants";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
@@ -13,7 +13,6 @@ export default function Home() {
         <h1>Track Your Applications & Resume Ratings</h1>
         <h2>No resumes found. Upload your first resume to get feedback.</h2>
       </div>
-    </section>
 
     {resumes.length >0 && 
     <div className="resumes-section">
@@ -22,6 +21,7 @@ export default function Home() {
       ))}
     </div>
     }
+    </section>
   </main>
   );
 }
